@@ -3,7 +3,7 @@ const { z } = require ('zod');
 const registroSchema = z.object({
   username: z.string({
     required_error: 'El nombre es requerido',
-    invalid_type_error: 'El email debe ser un string',
+    invalid_type_error: 'El email debe ser un string..',
   }).min(1).max(50),
   email: z.string({
     required_error: 'El email es requerido',
